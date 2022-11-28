@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root{
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 13%);
+    --blue: hsl(213, 19%, 23%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+*{
+    font-family: 'Overpass', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow: hidden;
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+    background: var(--very-dark-blue);
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+}
+
+.box{
+    width: 40rem;
+    padding: 2.5rem;
+    background: var(--dark-blue);
+    border-radius: 2rem;
+}
+
+.box.active{
+    display: none;
+}
+
+.box img{
+    padding: 1.5rem;
+    border-radius: 50%;
+    background-color: var(--blue);
+    margin-bottom: 1rem;
+}
+
+.box h3{
+    font-size: 3rem;
+    color: var(--white);
+    font-weight: 400;
+    margin: 2rem 0;
+}
+
+.box p{
+    font-size: 1.5rem;
+    color: var(--light-grey);
+    line-height: 1.5;
+}
+
+.box .values{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    margin: 2rem 0;
+    font-weight: 700;
+}
+
+.box .values button{
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    color: var(--light-grey);
+    background: var(--blue);
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+.box .values button:hover{
+    background: var(--orange);
+    color: var(--white);
+}
+
+.box .values button:active{
+    background: var(--medium-grey);
+    color: var(--white);
+}
+
+.box a{
+    display: block;
+    width: 100%;
+    border-radius: 2rem;
+    background: var(--orange);
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+    color: var(--white);
+    letter-spacing: .5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 3rem 0 1rem;
+}
+
+.box a:hover{
+    background: var(--white);
+    color: var(--orange);
+}
+
+/* -------thanks style------- */
+
+.thanks{
+    width: 40rem;
+    padding: 3rem;
+    background: var(--dark-blue);
+    border-radius: 2rem;
+    text-align: center;
+    display: none;
+}
+
+.thanks.active{
+    display: block;
+}
+
+.thanks img{
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+.thanks .message p{
+    background-color: var(--blue);
+    color: var(--orange);
+    border-radius: 2rem;
+    padding: .5rem 2rem;
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+.thanks h3{
+    margin-top: 2rem;
+    font-size: 3rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.thanks p{
+    font-size: 1.5rem;
+    color: var(--light-grey);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
